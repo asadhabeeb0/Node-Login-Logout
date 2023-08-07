@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> header}}
+  <title>Registration</title>
+</head>
+<body>
+  {{> navbar}}
+
+  <div class="container register">
+    <h1>Registration</h1>
+    <form action="/register" method="POST">
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" placeholder="First Name" id="firstname" name="firstname">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" class="form-control" placeholder="Last Name" id="lastname" name="lastname">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" placeholder="abcd@ef.com" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select class="form-control" id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Your Phone #" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" placeholder="Enter Your Age" id="age" name="age">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+      <div class="form-group">
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmpassword" name="confirmpassword">
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
